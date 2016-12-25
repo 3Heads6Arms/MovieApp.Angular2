@@ -1,0 +1,13 @@
+<md-grid-list cols="5">
+    <md-grid-tile *ngFor="let movie of movies">
+        <md-card>
+            <img md-card-image [src]="movie.poster_path">
+            <md-card-title>{{movie.title}}</md-card-title>
+            <md-card-actions>
+                <button md-button>Favorite</button>
+                <button md-button>Rate</button>
+            </md-card-actions>
+            <md-card-content>text</md-card-content>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
