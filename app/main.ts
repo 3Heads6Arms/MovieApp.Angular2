@@ -2,6 +2,6 @@ import './polyfills';
 import './vendors'
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app.module';
+import { MovieAppModule } from './app.module';
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(MovieAppModule);

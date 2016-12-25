@@ -1,11 +1,12 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MaterialModule } from '@angular/material';
 
-import { AppComponent }  from './app.component';
+import { MovieAppComponent } from './app.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, MaterialModule.forRoot()],
+  declarations: [MovieAppComponent],
+  bootstrap: [MovieAppComponent]
 })
-export class AppModule { }
+export class MovieAppModule { }
